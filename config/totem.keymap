@@ -193,7 +193,7 @@
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷            ╷            ╷           ╷            ╷            ╷           ╷
                 &emoji_m    &kp ESC     &kp HOME    &kp END     &kp DEL         &kp F13      &kp F15      &kp C_MUTE  &kp C_VOL_DN &kp C_VOL_UP       
                 &caps_word  &kp LEFT    &kp UP      &kp RIGHT   &kp PG_UP       &kp F14      &kp F16      &kp F17     &kp F18      &none     
-    &kp LSHIFT  &kp CAPS    &kp ALT     &kp DOWN    &none       &kp PG_DN       &kp C_BRI_DN &kp C_BRI_UP &none       &kp RALT     &none        &kp RSHIFT
+    &kp LSHIFT  &kp CAPS    &kp LALT    &kp DOWN    &none       &kp PG_DN       &kp C_BRI_DN &kp C_BRI_UP &none       &kp RALT     &none        &kp RSHIFT
                                         &kp LGUI    &mo ADJ     &spotl_m        &none        &trans       &kp LCTRL 
             >;
         };
