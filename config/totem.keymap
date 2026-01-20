@@ -217,7 +217,7 @@
 // ╷           ╷             ╷              ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
                 &btsel_ht 0 0 &kp ESC        &none       &none       &none           &none       &kp F1      &kp F2      &kp F3      &kp F4
                 &btsel_ht 1 1 &outtog_ht 0 0 &none       &kp F19     &none           &none       &kp F5      &kp F6      &kp F7      &kp F8
-    &none       &btsel_ht 2 2 &kp ALT        &none       &none       &none           &none       &kp F9      &kp F10     &kp F11     &kp F12     &none
+    &none       &btsel_ht 2 2 &kp LALT       &none       &none       &none           &none       &kp F9      &kp F10     &kp F11     &kp F12     &none
                                              &kp LGUI    &trans      &none           &none       &trans      &kp LCTRL
             >;
         };
