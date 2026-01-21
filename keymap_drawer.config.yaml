@@ -1,19 +1,29 @@
 parse_config:
   raw_binding_map:
+    "&caps_word": "CAPS WORD"
     "&emoji_m": "EMOJI"
     "&spotl_m": "SPTL"
-    "&c_back_m": "CBACK"
-    "&c_forward_m": "CFORWARD"
+    "&c_back_m": "CURS BACK"
+    "&c_forward_m": "CURS FORW"
     "&btclr_m": "BTCLR"
     "&outtog_m": "TOGOUT"
     "&btsel_m 0": "BT0"
     "&btsel_m 1": "BT1"
     "&btsel_m 2": "BT2"
+    "&soft_off": {h: "PWR OFF"}
     "&kp LEFT": "\u2190"
     "&kp UP": "\u2191"
     "&kp RIGHT": "\u2192"
     "&kp DOWN": "\u2193"
     "&kp LALT": "ALT"
     "&kp RALT": "ALT"
+    "&kp LGUI": "GUI"
+    "&kp LCTRL": "CTRL"
+    "&kp RCTRL": "CTRL"
+    "&kp LSHIFT": "SHIFT"
+    "&kp RSHIFT": "SHIFT"
     "&noop_m": ""
     "&none": ""
+
+draw_config:
+  dark_mode: true
