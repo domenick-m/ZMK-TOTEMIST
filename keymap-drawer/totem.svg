@@ -136,6 +136,9 @@ path.combo { stroke: #7f7f7f; }
 text.label, text.footer {
   stroke: none;
   fill: #FFF;
+  font-weight: 500; 
+  paint-order: normal;
+  text-rendering: geometricPrecision;
 }
 </style>
 <g transform="translate(30, 0)" class="layer-BASE">
