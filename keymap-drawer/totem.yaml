@@ -129,7 +129,7 @@ layers:
   - F3
   - F4
   - {h: BT1}
-  - {h: TOGOUT}
+  - {h: OUT TOG}
   - ''
   - F19
   - ''
@@ -166,9 +166,9 @@ combos:
 - p: [29, 30]
   k: ALT
   l: [BASE, SYM]
-- p: [4, 5, 14, 15, 25, 26]
-  k: {h: SLEEP}
+- p: [14, 15]
+  k: PWR OFF
   l: [ADJ]
-- p: [20, 31]
-  k: {h: BTCLR}
+- p: [2, 12]
+  k: {h: BT CLR}
   l: [ADJ]
