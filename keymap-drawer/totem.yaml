@@ -21,7 +21,7 @@ layers:
   - K
   - L
   - ;
-  - {t: TAB, h: LSHIFT}
+  - {t: TAB, h: SHIFT}
   - Z
   - X
   - C
@@ -32,13 +32,13 @@ layers:
   - ','
   - .
   - /
-  - {t: RET, h: RSHIFT}
-  - LGUI
+  - {t: RET, h: SHIFT}
+  - GUI
   - SYM
   - SPACE
   - BSPC
   - NAV
-  - LCTRL
+  - CTRL
   SYM:
   - '~'
   - '!'
@@ -60,7 +60,7 @@ layers:
   - '5'
   - '6'
   - '-'
-  - {t: \, h: LSHIFT}
+  - {t: \, h: SHIFT}
   - '`'
   - $
   - '%'
@@ -71,13 +71,13 @@ layers:
   - '8'
   - '9'
   - '*'
-  - {t: '=', h: RSHIFT}
-  - LGUI
+  - {t: '=', h: SHIFT}
+  - GUI
   - {type: held}
   - ''
   - '0'
   - ADJ
-  - {t: '|', h: LCTRL}
+  - {t: '|', h: CTRL}
   NAV:
   - EMOJI
   - ESC
@@ -89,7 +89,7 @@ layers:
   - MUTE
   - VOL DN
   - VOL UP
-  - '&caps_word'
+  - CAPS WORD
   - ←
   - ↑
   - →
@@ -98,8 +98,8 @@ layers:
   - F16
   - F17
   - F18
-  - CBACK
-  - LSHIFT
+  - CURS BACK
+  - SHIFT
   - CAPS
   - ALT
   - ↓
@@ -109,14 +109,14 @@ layers:
   - BRI UP
   - ''
   - ALT
-  - CFORWARD
-  - RSHIFT
-  - LGUI
+  - CURS FORW
+  - SHIFT
+  - GUI
   - ADJ
   - SPTL
   - ''
   - {type: held}
-  - LCTRL
+  - CTRL
   ADJ:
   - {h: BT0}
   - ESC
@@ -150,12 +150,12 @@ layers:
   - F11
   - F12
   - ''
-  - LGUI
+  - GUI
   - {type: held}
   - ''
   - ''
   - {type: held}
-  - LCTRL
+  - CTRL
 combos:
 - p: [0, 1]
   k: ESC
@@ -167,7 +167,7 @@ combos:
   k: ALT
   l: [BASE, SYM]
 - p: [4, 5, 14, 15, 25, 26]
-  k: '&soft_off'
+  k: {h: PWR OFF}
   l: [ADJ]
 - p: [20, 31]
   k: {h: BTCLR}
