@@ -135,7 +135,7 @@ path.combo { stroke: #7f7f7f; }
 
 text.label, text.footer {
   stroke: none;
-  fill: #000;
+  fill: #FFF;
 }
 </style>
 <g transform="translate(30, 0)" class="layer-BASE">
@@ -800,7 +800,7 @@ text.label, text.footer {
 <path d="M425,121 l-78,46" class="combo"/>
 <path d="M425,121 l78,46" class="combo"/>
 <rect rx="6" ry="6" x="411" y="108" width="28" height="26" class="combo"/>
-<text x="425" y="132" class="combo hold">PWR OFF</text>
+<text x="425" y="132" class="combo hold">SLEEP</text>
 </g>
 <g class="combo combopos-1">
 <path d="M425,209 l-371,0" class="combo"/>
