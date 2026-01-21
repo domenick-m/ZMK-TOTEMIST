@@ -10,7 +10,7 @@ parse_config:
     "&btsel_m 0": "BT0"
     "&btsel_m 1": "BT1"
     "&btsel_m 2": "BT2"
-    "&soft_off": {h: "PWR OFF"}
+    "&soft_off": {h: "SLEEP"}
     "&kp LEFT": "\u2190"
     "&kp UP": "\u2191"
     "&kp RIGHT": "\u2192"
@@ -30,5 +30,5 @@ draw_config:
   svg_extra_style: |
     text.label, text.footer {
       stroke: none;
-      fill: #000;
+      fill: #FFF;
     }
