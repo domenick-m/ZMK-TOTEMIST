@@ -139,11 +139,6 @@ text.label, text.footer {
   font-weight: 500; 
   paint-order: normal;
 }
-.layer-ADJ .combopos-1 {
-  transform: translateY(-2.5px);
-  transform-box: fill-box;
-  transform-origin: center;
-}
 </style>
 <g transform="translate(30, 0)" class="layer-BASE">
 <text x="0" y="28" class="label" id="BASE">BASE:</text>
