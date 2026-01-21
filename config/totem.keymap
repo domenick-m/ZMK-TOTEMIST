@@ -18,6 +18,24 @@
 
 / {
 	macros {
+		c_back_m: c_back_m {
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			bindings
+				= <&macro_press   &kp LCTRL>
+				, <&macro_tap     &kp MINUS>
+				, <&macro_release &kp LCTRL>
+				;
+		};
+		c_forward_m: c_forward_m {
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			bindings
+				= <&macro_press   &kp LCTRL &kp LSHFT>
+				, <&macro_tap     &kp MINUS>
+				, <&macro_release &kp LSHFT &kp LCTRL>
+				;
+		};
 		spotl_m: spotl_m {
 			compatible = "zmk,behavior-macro";
 			#binding-cells = <0>;
@@ -183,17 +201,17 @@
 //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━━┓
 //             ┃   EMOJI   ┃    ESC    ┃   HOME    ┃    END    ┃   FDEL    ┃   ┃    F13     ┃    F15     ┃    MUTE   ┃    VOL-    ┃    VOL+    ┃
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━━╋━━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━━╋━━━━━━━━━━━━┫
-//             ┃ CAPSWORD  ┃   LEFT    ┃     UP    ┃   RIGHT   ┃   PGUP    ┃   ┃    F14     ┃    F16     ┃    F17    ┃    F18     ┃            ┃
+//             ┃ CAPSWORD  ┃   LEFT    ┃     UP    ┃   RIGHT   ┃   PGUP    ┃   ┃    F14     ┃    F16     ┃    F17    ┃    F18     ┃   CBACK    ┃
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━━╋━━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━━╋━━━━━━━━━━━━╋━━━━━━━━━━━┓
-// ┃   SHIFT   ┃ CAPSLOCK  ┃    ALT    ┃    DOWN   ┃           ┃   PGDWN   ┃   ┃    BRI-    ┃    BRI+    ┃           ┃    ALT     ┃            ┃   SHIFT   ┃
+// ┃   SHIFT   ┃ CAPSLOCK  ┃    ALT    ┃    DOWN   ┃           ┃   PGDWN   ┃   ┃    BRI-    ┃    BRI+    ┃           ┃    ALT     ┃  CFORWARD  ┃   SHIFT   ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━━╔════════════╗━━━━━━━━━━━╋━━━━━━━━━━━━┻━━━━━━━━━━━━┻━━━━━━━━━━━┛
 //                                     ┃    GUI    ┃    ADJ    ┃   SPTL    ┃   ┃            ║    NAV     ║    CTRL   ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━━╚════════════╝━━━━━━━━━━━┛
             bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷            ╷            ╷           ╷            ╷            ╷           ╷
                 &emoji_m    &kp ESC     &kp HOME    &kp END     &kp DEL         &kp F13      &kp F15      &kp C_MUTE  &kp C_VOL_DN &kp C_VOL_UP       
-                &caps_word  &kp LEFT    &kp UP      &kp RIGHT   &kp PG_UP       &kp F14      &kp F16      &kp F17     &kp F18      &none     
-    &kp LSHIFT  &kp CAPS    &kp LALT    &kp DOWN    &none       &kp PG_DN       &kp C_BRI_DN &kp C_BRI_UP &none       &kp RALT     &none        &kp RSHIFT
+                &caps_word  &kp LEFT    &kp UP      &kp RIGHT   &kp PG_UP       &kp F14      &kp F16      &kp F17     &kp F18      &c_back_m     
+    &kp LSHIFT  &kp CAPS    &kp LALT    &kp DOWN    &none       &kp PG_DN       &kp C_BRI_DN &kp C_BRI_UP &none       &kp RALT     &c_forward_m &kp RSHIFT
                                         &kp LGUI    &mo ADJ     &spotl_m        &none        &trans       &kp LCTRL 
             >;
         };
