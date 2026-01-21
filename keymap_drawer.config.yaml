@@ -5,12 +5,12 @@ parse_config:
     "&spotl_m": "SPTL"
     "&c_back_m": "CURS BACK"
     "&c_forward_m": "CURS FORW"
-    "&btclr_m": "BT CLR"
+    "&btclr_m": {t: "BT CLR"}
     "&outtog_m": "OUT TOG"
     "&btsel_m 0": "BT0"
     "&btsel_m 1": "BT1"
     "&btsel_m 2": "BT2"
-    "&soft_off": "PWR OFF"
+    "&soft_off": {t: "PWR OFF"}
     "&kp LEFT": "\u2190"
     "&kp UP": "\u2191"
     "&kp RIGHT": "\u2192"
@@ -33,9 +33,4 @@ draw_config:
       fill: #FFF;
       font-weight: 500; 
       paint-order: normal;
-    }
-    .layer-ADJ .combopos-1 {
-      transform: translateY(-2.5px);
-      transform-box: fill-box;
-      transform-origin: center;
     }
