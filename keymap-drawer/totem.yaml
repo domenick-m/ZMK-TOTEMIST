@@ -1,0 +1,174 @@
+layout: {zmk_keyboard: totem}
+layers:
+  BASE:
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - ;
+  - {t: TAB, h: LSHIFT}
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - {t: RET, h: RSHIFT}
+  - LGUI
+  - SYM
+  - SPACE
+  - BSPC
+  - NAV
+  - LCTRL
+  SYM:
+  - '~'
+  - '!'
+  - '@'
+  - '#'
+  - '['
+  - ']'
+  - '1'
+  - '2'
+  - '3'
+  - +
+  - _
+  - '&'
+  - '"'
+  - ''''
+  - (
+  - )
+  - '4'
+  - '5'
+  - '6'
+  - '-'
+  - {t: \, h: LSHIFT}
+  - '`'
+  - $
+  - '%'
+  - ^
+  - '{'
+  - '}'
+  - '7'
+  - '8'
+  - '9'
+  - '*'
+  - {t: '=', h: RSHIFT}
+  - LGUI
+  - {type: held}
+  - ''
+  - '0'
+  - ADJ
+  - {t: '|', h: LCTRL}
+  NAV:
+  - EMOJI
+  - ESC
+  - HOME
+  - END
+  - DEL
+  - F13
+  - F15
+  - MUTE
+  - VOL DN
+  - VOL UP
+  - '&caps_word'
+  - ←
+  - ↑
+  - →
+  - PG UP
+  - F14
+  - F16
+  - F17
+  - F18
+  - CBACK
+  - LSHIFT
+  - CAPS
+  - ALT
+  - ↓
+  - ''
+  - PG DN
+  - BRI DN
+  - BRI UP
+  - ''
+  - ALT
+  - CFORWARD
+  - RSHIFT
+  - LGUI
+  - ADJ
+  - SPTL
+  - ''
+  - {type: held}
+  - LCTRL
+  ADJ:
+  - {h: BT0}
+  - ESC
+  - ''
+  - ''
+  - ''
+  - ''
+  - F1
+  - F2
+  - F3
+  - F4
+  - {h: BT1}
+  - {h: TOGOUT}
+  - ''
+  - F19
+  - ''
+  - ''
+  - F5
+  - F6
+  - F7
+  - F8
+  - ''
+  - {h: BT2}
+  - ALT
+  - ''
+  - ''
+  - ''
+  - ''
+  - F9
+  - F10
+  - F11
+  - F12
+  - ''
+  - LGUI
+  - {type: held}
+  - ''
+  - ''
+  - {type: held}
+  - LCTRL
+combos:
+- p: [0, 1]
+  k: ESC
+  l: [BASE, SYM]
+- p: [21, 22]
+  k: ALT
+  l: [BASE, SYM]
+- p: [29, 30]
+  k: ALT
+  l: [BASE, SYM]
+- p: [4, 5, 14, 15, 25, 26]
+  k: '&soft_off'
+  l: [ADJ]
+- p: [20, 31]
+  k: {h: BTCLR}
+  l: [ADJ]
