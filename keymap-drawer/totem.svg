@@ -798,7 +798,7 @@ text.label, text.footer {
 <path d="M425,121 l-75,0" class="combo"/>
 <path d="M425,121 l75,0" class="combo"/>
 <rect rx="6" ry="6" x="411" y="108" width="28" height="26" class="combo"/>
-<text x="425" y="121" class="combo tap">SLEEP</text>
+<text x="425" y="132" class="combo hold">SLEEP</text>
 </g>
 <g class="combo combopos-1">
 <rect rx="6" ry="6" x="198" y="43" width="28" height="26" class="combo"/>

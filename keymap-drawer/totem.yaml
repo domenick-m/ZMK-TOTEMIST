@@ -167,7 +167,7 @@ combos:
   k: ALT
   l: [BASE, SYM]
 - p: [14, 15]
-  k: SLEEP
+  k: {h: SLEEP}
   l: [ADJ]
 - p: [2, 12]
   k: {h: BTCLR}
