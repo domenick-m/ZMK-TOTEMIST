@@ -5,12 +5,12 @@ parse_config:
     "&spotl_m": "SPTL"
     "&c_back_m": "CURS BACK"
     "&c_forward_m": "CURS FORW"
-    "&btclr_m": {t: "BTCLR"}
+    "&btclr_m": "BTCLR"
     "&outtog_m": "OUT TOG"
     "&btsel_m 0": "BT0"
     "&btsel_m 1": "BT1"
     "&btsel_m 2": "BT2"
-    "&soft_off": {t: "SLEEP"}
+    "&soft_off_m": "SLEEP"
     "&kp LEFT": "\u2190"
     "&kp UP": "\u2191"
     "&kp RIGHT": "\u2192"

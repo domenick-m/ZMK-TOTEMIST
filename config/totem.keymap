@@ -8,9 +8,6 @@
 #define NAV  2
 #define ADJ  3
 
-&soft_off {
-    hold-time-ms = <3000>;
-};
 &mt {
 	flavor = "balanced";
 	tapping-term-ms = <170>;
@@ -77,6 +74,11 @@
 			#binding-cells = <0>;
 			bindings = <&out OUT_TOG>;
 		};
+		soft_off_m: soft_off_m {
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			bindings = <&soft_off>;
+		};
 	};
 
 	behaviors {
@@ -100,6 +102,13 @@
 			tapping-term-ms = <3000>;
 			flavor = "tap-preferred";
 			bindings = <&outtog_m>, <&noop_m>;
+		};
+		soft_off_ht: soft_off_ht {
+			compatible = "zmk,behavior-hold-tap";
+			#binding-cells = <2>;
+			tapping-term-ms = <3000>;
+			flavor = "tap-preferred";
+			bindings = <&soft_off_m>, <&noop_m>;
 		};
 	};
 
@@ -129,7 +138,7 @@
 		combo_soft_off {
 			timeout-ms = <400>;
 			key-positions = <14 15>;    /* G + H */
-			bindings = <&soft_off>;
+			bindings = <&soft_off_ht N0 N0>;
 			slow-release;
 			layers = <ADJ>;
 		};
