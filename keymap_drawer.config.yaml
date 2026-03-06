@@ -7,6 +7,7 @@ parse_config:
     "&c_forward_m": "CURS FORW"
     "&btclr_m": "BTCLR"
     "&outtog_m": "OUT TOG"
+    "&studio_unlock": "STUDIO"
     "&btsel_m 0": "BT0"
     "&btsel_m 1": "BT1"
     "&btsel_m 2": "BT2"
