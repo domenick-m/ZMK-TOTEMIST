@@ -198,7 +198,7 @@
             bindings = <
 // ╷           ╷           ╷            ╷            ╷            ╷            ╷   ╷            ╷            ╷           ╷            ╷            ╷           ╷
                 &kp C_MUTE  &kp C_VOL_DN &kp C_VOL_UP &kp C_BRI_DN &kp C_BRI_UP    &kp DEL       &kp HOME     &kp UP      &kp END      &none       
-                &kp LGUI    &kp LALT     &kp CTRL     &kp SHIFT    &kp PG_UP       &c_back_m     &kp LEFT     &kp DOWN    &kp RIGHT    &c_forward_m     
+                &kp LGUI    &kp LALT     &kp LCTRL    &kp LSHIFT   &kp PG_UP       &c_back_m     &kp LEFT     &kp DOWN    &kp RIGHT    &c_forward_m     
     &emoji_m    &none       &none        &none        &none        &kp PG_DN       &none         &kp F16      &kp F17     &kp F18      &none        &kp CAPS
                                          &kp ESC      &mo ADJ      &none           &none         &trans       &kp RET  
             >;
