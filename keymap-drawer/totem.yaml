@@ -11,17 +11,17 @@ layers:
   - I
   - O
   - P
-  - A
-  - S
-  - D
-  - F
+  - {t: A, h: GUI}
+  - {t: S, h: ALT}
+  - {t: D, h: CTRL}
+  - {t: F, h: SHIFT}
   - G
   - H
-  - J
-  - K
-  - L
-  - ;
-  - {t: TAB, h: SHIFT}
+  - {t: J, h: SHIFT}
+  - {t: K, h: CTRL}
+  - {t: L, h: ALT}
+  - {t: ;, h: RGUI}
+  - TAB
   - Z
   - X
   - C
@@ -32,13 +32,13 @@ layers:
   - ','
   - .
   - /
-  - {t: RET, h: SHIFT}
-  - GUI
+  - SHIFT
+  - ESC
   - SYM
   - SPACE
   - BSPC
   - NAV
-  - CTRL
+  - RET
   SYM:
   - '~'
   - '!'
@@ -50,18 +50,18 @@ layers:
   - '2'
   - '3'
   - +
-  - _
-  - '&'
-  - '"'
-  - ''''
+  - {t: _, h: GUI}
+  - {t: '&', h: ALT}
+  - {t: '"', h: CTRL}
+  - {t: '''', h: SHIFT}
   - (
   - )
-  - '4'
-  - '5'
-  - '6'
-  - '-'
-  - {t: \, h: SHIFT}
-  - '`'
+  - {t: '4', h: SHIFT}
+  - {t: '5', h: CTRL}
+  - {t: '6', h: ALT}
+  - {t: '-', h: RGUI}
+  - BSPC
+  - \
   - $
   - '%'
   - ^
@@ -71,55 +71,55 @@ layers:
   - '8'
   - '9'
   - '*'
-  - {t: '=', h: SHIFT}
-  - GUI
+  - '='
+  - '`'
   - {type: held}
-  - ''
+  - SPTL
   - '0'
   - ADJ
-  - {t: '|', h: CTRL}
+  - '|'
   NAV:
-  - EMOJI
-  - ESC
-  - HOME
-  - END
-  - DEL
-  - F13
-  - F15
   - MUTE
   - VOL DN
   - VOL UP
-  - CAPS WORD
-  - ←
+  - BRI DN
+  - BRI UP
+  - DEL
+  - HOME
   - ↑
-  - →
+  - END
+  - ''
+  - GUI
+  - ALT
+  - CTRL
+  - SHIFT
   - PG UP
-  - F14
+  - CURS BACK
+  - ←
+  - ↓
+  - →
+  - CURS FORW
+  - EMOJI
+  - ''
+  - ''
+  - ''
+  - ''
+  - PG DN
+  - ''
   - F16
   - F17
   - F18
-  - CURS BACK
-  - SHIFT
+  - ''
   - CAPS
-  - ALT
-  - ↓
-  - ''
-  - PG DN
-  - BRI DN
-  - BRI UP
-  - ''
-  - ALT
-  - CURS FORW
-  - SHIFT
-  - GUI
+  - ESC
   - ADJ
-  - SPTL
+  - ''
   - ''
   - {type: held}
-  - CTRL
+  - RET
   ADJ:
   - {h: BT0}
-  - ESC
+  - ''
   - ''
   - ''
   - ''
@@ -129,46 +129,37 @@ layers:
   - F3
   - F4
   - {h: BT1}
-  - {h: OUT TOG}
+  - STUDIO
   - ''
-  - F19
+  - ''
   - ''
   - ''
   - F5
   - F6
   - F7
   - F8
-  - ''
+  - {h: OUT TOG}
   - {h: BT2}
-  - ALT
-  - STUDIO
   - ''
   - ''
+  - ''
+  - F19
   - ''
   - F9
   - F10
   - F11
   - F12
   - ''
-  - GUI
+  - ''
   - {type: held}
   - ''
   - ''
   - {type: held}
-  - CTRL
+  - ''
 combos:
-- p: [0, 1]
-  k: ESC
-  l: [BASE, SYM]
-- p: [21, 22]
-  k: ALT
-  l: [BASE, SYM]
-- p: [29, 30]
-  k: ALT
-  l: [BASE, SYM]
 - p: [14, 15]
   k: {h: SLEEP}
   l: [ADJ]
-- p: [2, 12]
+- p: [3, 4]
   k: {h: BTCLR}
   l: [ADJ]
