@@ -20,7 +20,7 @@ layers:
   - {t: J, h: SHIFT}
   - {t: K, h: CTRL}
   - {t: L, h: ALT}
-  - {t: ;, h: RGUI}
+  - {t: ;, h: GUI}
   - TAB
   - Z
   - X
@@ -59,7 +59,7 @@ layers:
   - {t: '4', h: SHIFT}
   - {t: '5', h: CTRL}
   - {t: '6', h: ALT}
-  - {t: '-', h: RGUI}
+  - {t: '-', h: GUI}
   - BSPC
   - \
   - $
