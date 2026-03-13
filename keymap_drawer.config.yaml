@@ -19,6 +19,7 @@ parse_config:
     "&kp LALT": "ALT"
     "&kp RALT": "ALT"
     "&kp LGUI": "GUI"
+    "&kp RGUI": "GUI"
     "&kp LCTRL": "CTRL"
     "&kp RCTRL": "CTRL"
     "&kp LSHIFT": "SHIFT"
