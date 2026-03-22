@@ -29,6 +29,14 @@ include:
     shield: totem_right
   - board: xiao_ble
     shield: totem_left
+    snippet: zmk-usb-logging
+    artifact-name: totem_left_with_usb_logging
+  - board: xiao_ble
+    shield: totem_right
+    snippet: zmk-usb-logging
+    artifact-name: totem_right_with_usb_logging
+  - board: xiao_ble
+    shield: totem_left
     cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=y -DCONFIG_ZMK_USB=y
     artifact-name: totem_left_usb_test
   - board: xiao_ble
