@@ -55,11 +55,6 @@ include:
     artifact-name: totem_right_usb_test
   - board: nice_nano
     shield: totem_dongle
-    snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y
-    artifact-name: totem_dongle_with_studio
-  - board: nice_nano
-    shield: totem_dongle
     snippet: zmk-usb-logging
     artifact-name: totem_dongle_with_usb_logging
   - board: nice_nano
